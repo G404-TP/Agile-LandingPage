@@ -3,14 +3,21 @@
   <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!--Import your custom.css-->
-    <link type="text/css" rel="stylesheet" href=""/>
+    <link type="text/css" rel="stylesheet" href="/agile-dev/css/custom.css"/>
+    <link href="/src/output.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>🤙 Yo! application 🤙 | Simplon</title>
   </head>
   <body>
 
-    <!--Import your custom.js-->
-    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="/agile-dev/js/custom.js"></script>
   </body>
 </html>
+
+<!--
+POUR LANCER LE BUILD TAILWINDS
+DANS LE TERMINAL
+
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+
+-->
