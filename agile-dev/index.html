@@ -7,10 +7,54 @@
     <link href="/src/output.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>🤙 Yo! application 🤙 | Simplon</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
   </head>
   <body>
+     <!-- NAVBAR -->
+    <header class="bg-black text-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <nav class="flex items-center justify-between py-3 md:py-4">
+          <a href="#" class="flex items-center"><img src="/agile-dev/img/logo_application.png" alt="Front popul'Hair" class="h-10 md:h-11 w-auto"></a>
+          <a href="#contact" class="text-lg md:text-xl font-medium leading-none tracking-wide hover:opacity-80 transition-opacity">Prendre rendez-vous</a>
+        </nav>
+      </div>
+    </header>
+    <!-- SEC 3 CARDS-->
+    <section class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <article class="text-center">
+          <div class="h-48 w-full flex items-center justify-center overflow-hidden">
+          <img src="/agile-dev/img/iphone_ipad_light.png" alt="" class="max-h-full max-w-full object-contain" />
+        </div>
+          <h3 class="mt-4 text-3xl font-medium text-neutral-700">Lorem</h3>
+          <div class="mt-4 space-y-2 text-neutral-700">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis inventore nesciunt explicabo nisi veniam provident est esse, non a mollitia laborum enim recusandae fuga consequatur molestiae consectetur maxime.</p>    
+          </div>
+        </article>
+        <article class="text-center">
+          <div class="h-48 w-full flex items-center justify-center overflow-hidden">
+          <img src="/agile-dev/img/iphone_features_light.png" alt="" class="max-h-full max-w-full object-contain" />
+        </div>
+          <h3 class="mt-4 text-3xl font-medium text-neutral-700">lorem</h3>
+          <div class="mt-4 space-y-2 text-neutral-700">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis inventore nesciunt explicabo nisi veniam provident est esse, non a mollitia laborum enim recusandae fuga consequatur molestiae consectetur maxime.</p>
+          </div>
+        </article>
+        <article class="text-center">
+          <div class="h-48 w-full flex items-center justify-center overflow-hidden">
+          <img src="/agile-dev/img/iphone_cover_light.png" alt="" class="max-h-full max-w-full object-contain" />
+        </div>
+          <h3 class="mt-4 text-3xl font-medium text-neutral-700">lorem</h3>
+          <div class="mt-4 space-y-2 text-neutral-700">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis inventore nesciunt explicabo nisi veniam provident est esse, non a mollitia laborum enim recusandae fuga consequatur molestiae consectetur maxime.</p>
+          </div>
+        </article>
+      </div>
+      </div>
+    </section>
 
-    <div id="second-part" class="flex px-13 py-11 ">
+    <div id="produit-part" class="flex px-13 py-11 ">
      <div class="order-1 flex flex-start justify-center">
       <img src="./img/iphone_ipad_light.png"  class="max-h-30% max-w-30% object-contain">
      </div>
@@ -24,6 +68,62 @@
     </div>
 
 
+    <!--section valeurs-->
+    <section class="bg-black py-12">
+      <div class="container justify-between items-center flex mx-auto md:flex-row flex-col">
+        <div class="text-white text-right max-w-2xl md:mr-8">
+          <h1 class="text-3xl font-serif mb-4">Valeurs</h1>
+          <p>Sed mattis urna quis quam fermentum volutpat. Quisque at libero in nulla tempor pretium. Maecenas sit amet justo ante. 
+          Ut dictum interdum facilisis. Pellentesque sollicitudin tempor dolor, a vulputate dolor maximus id. Interdum et malesuada
+          fames ac ante ipsum primis in faucibus. Nam hendrerit diam id nulla placerat, vel finibus tellus bibendum. Nullam id 
+          velit at dui tincidunt vestibulum.</p>
+        </div>
+        <div class="flex justify-center mt-6 md:mt-0">
+          <img src="img/iphone_features_light.png" alt="valeur" class="w-36 h-auto mx-auto">
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="justify-between bottom-0 left-0 right-0 flex gap-10 px-20 py-10 bg-black text-white">
+      <form class="flex flex-col w-2/6 text-center gap-4 text-black" action="POST">
+        <h2 class="text-2xl text-white">Nous contacter</h2>
+        <input class="p-2 bg-white" type="email" name="email" placeholder="email :" required/>
+        <textarea class="p-2 h-full bg-white" name="message" placeholder="message :" required></textarea>
+        <button class="p-1 text-2xl bg-red-500 hover:bg-amber-50 cursor-pointer" type="submit">Envoyer votre message</button>
+      </form>
+      <div class="w-4/6 flex flex-col text-right gap-4">
+        <div class="flex justify-between gap-2 invert">
+          <a href="https://www.facebook.com/GarageQuatreCentQuatre/?locale=fr_FR">
+            <img class="cursor-pointer h-20" src="./img/facebook-f-brands.svg" alt="">
+          </a>
+          <a href="https://x.com/G404Roanne">
+            <img class="cursor-pointer h-20" src="./img/twitter-brands.svg" alt="">
+          </a>
+          <a href="https://www.instagram.com/garage404_ecole_du_numerique">
+            <img class="cursor-pointer h-20" src="./img/instagram-brands.svg" alt="">
+          </a>
+          <a href="https://fr.linkedin.com/company/garage-404">
+            <img class="cursor-pointer h-20" src="./img/linkedin-brand.svg" alt="">
+          </a>
+        </div>
+        <div class="flex flex-col gap-2 items-end">
+          <h2 class="text-2xl">Incitation avis google</h2>
+          <iframe
+          class="justify-self-end w-100 h-50"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2769.7876934669807!2d4.070666455796921!3d46.03538462083941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f40f4682c98793%3A0xe15885c64030777d!2sGarage404!5e0!3m2!1sfr!2sfr!4v1758121244035!5m2!1sfr!2sfr"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="flex flex-col gap-2 items-end">
+          <h2 class="text-2xl">Mentions légales</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus vero impedit ipsum eum possimus accusamus ipsam officia temporibus laborum, quam autem! Consequuntur ea quia enim illo laudantium aperiam provident corrupti? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, beatae? Blanditiis dicta, minima nulla eligendi eveniet deleniti minus aperiam voluptatibus, itaque eius ratione.</p>
+        </div>
+      </div>
+    </footer>
     <script type="text/javascript" src="/agile-dev/js/custom.js"></script>
   </body>
 </html>
