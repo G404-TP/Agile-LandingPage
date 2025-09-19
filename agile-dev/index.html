@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>🤙 Yo! application 🤙 | Simplon</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
       html{
         scroll-behavior: smooth;
@@ -17,9 +20,9 @@
   <body>
     
      <!-- NAVBAR -->
-    <header class="w-full top-0 fixed bg-black text-white">
+    <header id="site-header" class="w-full h-[80px] top-0 fixed bg-black text-white">
       <div class="max-w-[648px] w-[648px] sm:w-full sm:max-w-full">
-        <nav class="flex justify-between py-3 md:py-4 w-full">
+        <nav class="flex justify-between items-center py-3 md:py-4 w-full">
           <a href="#" class="flex items-center ml-4"><img src="/agile-dev/img/logo_application.png" alt="Front popul'Hair" class="h-10 md:h-11 w-auto"></a>
           <div class="text-xs font-medium sm:mr-6">
             <a href="#" class="m-1 sm:m-6 sm:text-lg hover:text-orange-500">Lorem ipsum</a>
@@ -29,43 +32,49 @@
         </nav>
       </div>
     </header>
-     <!-- PRESENTATION -->
-    <section id="presentation" class="flex justify-between py-10 px-20 mt-24">
-      <div class="flex flex-col gap-5">
-        <h2 class="text-2xl">Horaires et nous trouver</h2>
-        <iframe
-          class="justify-self-end w-70 h-50"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2769.7876934669807!2d4.070666455796921!3d46.03538462083941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f40f4682c98793%3A0xe15885c64030777d!2sGarage404!5e0!3m2!1sfr!2sfr!4v1758121244035!5m2!1sfr!2sfr"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        <div class="flex space-x-3">
-          <p>Lorem ipsum dolor<br>sit amet consectetur.</p>
-          <p>Lorem ipsum, dolor<br>sit amet consectetur.</p>
+    <!-- PRESENTATION -->
+    <section class="flex justify-between bg-blue-400 py-10 px-20">
+      <div class="txt w-3/6 flex flex-col gap-10 pt-25 pl-10 font-roboto">
+        <h2 class="text-5xl">Présentation</h2>
+        <p class="text-2xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+           Asperiores hic inventore distinctio odio suscipit. Dolorem.</p>
+        <div class="text-2xl text-white py-3 px-3 font-bold space-x-10">
+          <a href="https://www.google.com/?hl=fr" target="_blank">
+            <button class="bg-black py-1.5 px-10">Google</button>
+          </a>
+          <a href="https://www.apple.com/fr/" target="_blank">
+            <button class="bg-black py-1.5 px-12">Apple</button>
+          </a>
         </div>
       </div>
-      <div class="flex flex-col w-3/5 justify-between ml-4">
-        <h1 class="text-4xl">Présentation</h1>
-        <p class="text-2xl text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores pariatur sed voluptatibus, corrupti natus aliquid earum suscipit non nisi enim animi nulla adipisci et voluptates recusandae sint atque iste assumenda.</p>
-        <button class="text-left mt-4 sm:mt-0">
-          <a class="text-white bg-black  py-2.5 px-3 font-bold" href="">Prendre RDV</a>
-        </button>
-      </div>  
-    </section>
-    <!--SEC PROD-->
-    <div id="produit-part" class="flex px-13 py-11">
-     <div class="order-1 flex flex-start justify-center">
-      <img src="./img/iphone_ipad_light.png"  class="max-h-30% max-w-30% object-contain">
-     </div>
-     <div class="order-2 flex-end flex items-center justify-center text-center flex-col">
-      <span class="text-xl">Titre a 2 niveau <br></span>
-      <span class="text-x1"><br>Lorem ipsum dolor sit consectetur voluptate Rimlea, perferendis, quae provident, illo atque odit! Tempora illum vitae necessitatibus quia!</span>
-      <br>
-       <button class="bg-red-600 space-y-5 px-2 py-2 text-white">buy, not a scam</button>
+      <div >
+        <img src="img/iphone_side_light.png" class="max-h-110 pr-40" alt="image">
       </div>
-     </div>
+    </section>
+    <!--SEC BENEFICE-->
+    <section class="flex items-center justify-center w-full h-96">
+      <div class="max-w-6xl flex items-center justify-center ml-10 mr-10">
+        <div class="flex overflow-hidden mr-10"><img src="/agile-dev/img/iphone_isometric_light.png" class="object-contain" width="450px" height="150px"></div>
+      <div class="ml-10 max-w-[300px] sm:max-w-2xl p-4">
+        <h1 class="font-semibold text-gray-400 text-4xl mb-2">Benefice 1</h1>
+        <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, minima! Dolore quibusdam, facere tempora nemo aliquid molestias dolores reprehenderit libero pariatur omnis autem nulla sapiente corporis ratione! Error cumque amet ut, totam perferendis corrupti eligendi omnis earum? Quis, totam aliquam.</p>
+        <button id="btn-benef" class="w-[120px] h-[40px] bg-red-400 text-white hover:text-black">Click me !</button id="btn-benef">
+      </div>
+      </div>
+    </section>
+    <section class="flex items-center justify-center w-full h-96">
+      <div class="max-w-6xl flex items-center justify-center ml-10 mr-10">
+        
+      <div class="mr-10 max-w-[300px] sm:max-w-2xl p-4">
+        <h1 class="font-semibold text-gray-400 text-4xl mb-2">Benefice 2</h1>
+        <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, minima! Dolore quibusdam, facere tempora nemo aliquid molestias dolores reprehenderit libero pariatur omnis autem nulla sapiente corporis ratione! Error cumque amet ut, totam perferendis corrupti eligendi omnis earum? Quis, totam aliquam.</p>
+        <button id="btn-benef" class="w-[120px] h-[40px] bg-red-400 text-white hover:text-black">Click me !</button>
+      </div>
+      <div class="flex overflow-hidden ml-10"><img src="/agile-dev/img/iphone_isometric_light.png" class="object-contain" width="450px" height="150px"></div>
+      </div>
+    </section>
+  
+
     <!--section valeurs-->
     <section class="bg-black py-12">
       <div class="container mx-auto flex justify-center items-center">
