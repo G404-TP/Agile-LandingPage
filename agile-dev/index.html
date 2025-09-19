@@ -8,19 +8,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>🤙 Yo! application 🤙 | Simplon</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body>
+    
      <!-- NAVBAR -->
-    <header class="bg-black text-white">
+    <header id="fixed" class="w-full top-0 fixed bg-black text-white">
       <div class="max-w-6xl mx-auto px-4">
         <nav class="flex items-center justify-between py-3 md:py-4">
           <a href="#" class="flex items-center"><img src="/agile-dev/img/logo_application.png" alt="Front popul'Hair" class="h-10 md:h-11 w-auto"></a>
-          <a href="#contact" class="text-lg md:text-xl font-medium leading-none tracking-wide hover:opacity-80 transition-opacity">Prendre rendez-vous</a>
+          <div class="text-lg font-medium leading-none tracking-wide">
+            <a href="#presentation" class="m-6 p-3">Présentation</a>
+            <a href="#produit-part" class="m-6 bg-orange-500 p-3">Nos produits</a>
+          </div>
+          
         </nav>
       </div>
     </header>
     <!--SEC PROD-->
-    <div id="produit-part" class="flex px-13 py-11 ">
+    <div id="produit-part" class="flex px-13 py-11 mt-24">
      <div class="order-1 flex flex-start justify-center">
       <img src="./img/iphone_ipad_light.png"  class="max-h-30% max-w-30% object-contain">
      </div>
